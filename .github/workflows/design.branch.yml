@@ -1,5 +1,5 @@
 on:
-  pull_request:
+  push:
     branches:
       - design
 
@@ -26,5 +26,10 @@ jobs:
           branch: main-promotion
           labels: auto-generated
           title: Update design tokens
+      - name: Check PR output
+        if: ${{ steps.cpr.outputs.pull-request-number }}
+        run: |
+          echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
+          echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}"
 
 
