@@ -4,5 +4,8 @@
   "repository": "https://github.com/SavelevMatthew/sav-ui",
   "author": "Matthew Savelev <savelevmatthew@gmail.com>",
   "license": "MIT",
-  "packageManager": "yarn@3.2.3"
+  "packageManager": "yarn@3.2.3",
+  "dependencies": {
+    "antd": "^4.22.8"
+  }
 }
