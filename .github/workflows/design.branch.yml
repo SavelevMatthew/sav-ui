@@ -27,7 +27,7 @@ jobs:
         with:
           token: ${{ secrets.FIGMA_PAT }}
           branch: design
-          labels: auto-generated
+          labels: auto-generated, review-required
           title: Update design tokens
       - name: Check PR output
         if: ${{ steps.cpr.outputs.pull-request-number }}
