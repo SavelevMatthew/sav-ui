@@ -1,0 +1,30 @@
+on:
+  pull_request:
+    branches:
+      - design
+
+jobs:
+  generatePR:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: Reset promotion branch
+        run: |
+          git fetch origin design:design
+          git reset --hard design
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v4
+        id: cpr
+        with:
+          branch: main-promotion
+          labels: auto-generated
+          title: Update design tokens
+
+

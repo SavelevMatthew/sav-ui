@@ -2533,6 +2533,9 @@ __metadata:
   resolution: "@savelevmatthew/ui@workspace:packages/ui"
   dependencies:
     antd: ^4.22.8
+  peerDependencies:
+    react: ">=16"
+    react-dom: ">=16"
   languageName: unknown
   linkType: soft
 
