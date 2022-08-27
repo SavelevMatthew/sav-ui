@@ -25,6 +25,7 @@ jobs:
         uses: peter-evans/create-pull-request@v4
         id: cpr
         with:
+          token: ${{ secrets.FIGMA_PAT }}
           branch: design
           labels: auto-generated
           title: Update design tokens
