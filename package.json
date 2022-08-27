@@ -10,7 +10,15 @@
     "prepare": "yarn husky install",
     "lint": "yarn eslint . --ext .js,.jsx,.ts,.tsx"
   },
-  "engines": {},
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "engines": {
+    "node": ">=14.19",
+    "yarn": ">=3.2.0"
+  },
   "packageManager": "yarn@3.2.3",
   "devDependencies": {
     "@commitlint/cli": "^17.1.1",

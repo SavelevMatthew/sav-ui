@@ -1,0 +1,8 @@
+{
+  "name": "@savelevmatthew/ui",
+  "description": "Basic UI-kit for testing different integrations",
+  "repository": "https://github.com/SavelevMatthew/sav-ui",
+  "author": "Matthew Savelev <savelevmatthew@gmail.com>",
+  "license": "MIT",
+  "packageManager": "yarn@3.2.3"
+}
