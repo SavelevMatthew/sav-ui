@@ -1,2 +1,3 @@
-tokens/*
-!tokens/tokens.json
+src/tokens/*
+!src/tokens/tokens.json
+storybook-static

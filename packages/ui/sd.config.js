@@ -1,10 +1,10 @@
 module.exports = {
-    source: ['tokens/sets/*.json'],
+    source: ['src/tokens/sets/*.json'],
     platforms: {
         css: {
             transformGroup: 'css',
             prefix: 'condo',
-            buildPath: 'tokens/',
+            buildPath: 'src/tokens/',
             files: [
                 {
                     destination: 'variables.css',
