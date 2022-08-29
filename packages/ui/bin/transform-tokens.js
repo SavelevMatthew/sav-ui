@@ -2,7 +2,7 @@ const { spawn } = require('child_process')
 const path = require('path')
 const get = require('lodash/get')
 const fs = require('fs')
-const tokens = require('../tokens/tokens.json')
+const tokens = require('../src/tokens/tokens.json')
 
 /**
  * Split single token file to multiple sets by namespaces and stores them inside tokens/sets dir
@@ -28,8 +28,8 @@ function splitTokenSets () {
             'workspace',
             '@savelevmatthew/ui',
             'token-transformer',
-            'tokens/tokens.json',
-            `tokens/sets/${setName}.json`,
+            'src/tokens/tokens.json',
+            `src/tokens/sets/${setName}.json`,
             setsToParse,
             setsToExclude,
             '--expandTypography',
@@ -38,7 +38,7 @@ function splitTokenSets () {
         // Wrap entire set with namespace name
         childProcess.on('exit', code => {
             if (code === 0) {
-                const fileName = path.join(__dirname, `../tokens/sets/${setName}.json`)
+                const fileName = path.join(__dirname, `../src/tokens/sets/${setName}.json`)
                 const file = require(fileName)
                 fs.writeFileSync(fileName, JSON.stringify({
                     [setName]: file,

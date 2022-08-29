@@ -2528,6 +2528,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@savelevmatthew/ui@link:./packages/ui/src::locator=root%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "@savelevmatthew/ui@link:./packages/ui/src::locator=root%40workspace%3A."
+  languageName: node
+  linkType: soft
+
 "@savelevmatthew/ui@workspace:packages/ui":
   version: 0.0.0-use.local
   resolution: "@savelevmatthew/ui@workspace:packages/ui"
@@ -2536,6 +2542,7 @@ __metadata:
     lodash: ^4.17.21
     style-dictionary: ^3.7.1
     token-transformer: ^0.0.25
+    typescript: ^4.1.5
   peerDependencies:
     react: ">=16"
     react-dom: ">=16"
@@ -3048,6 +3055,13 @@ __metadata:
   version: 0.0.29
   resolution: "@types/json5@npm:0.0.29"
   checksum: e60b153664572116dfea673c5bda7778dbff150498f44f998e34b5886d8afc47f16799280e4b6e241c0472aef1bc36add771c569c68fc5125fc2ae519a3eb9ac
+  languageName: node
+  linkType: hard
+
+"@types/lodash@npm:^4.14.184":
+  version: 4.14.184
+  resolution: "@types/lodash@npm:4.14.184"
+  checksum: 6d9a4d67f7f9d0ec3fd21174f3dd3d00629dc1227eb469450eace53adbc1f7e2330699c28d0fe093e5f0fef0f0e763098be1f779268857213224af082b62be21
   languageName: node
   linkType: hard
 
@@ -12278,6 +12292,8 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^17.1.1
     "@commitlint/config-conventional": ^17.1.0
+    "@savelevmatthew/ui": "link:./packages/ui/src"
+    "@types/lodash": ^4.14.184
     "@typescript-eslint/eslint-plugin": ^5.0.0
     "@typescript-eslint/parser": ^5.35.1
     eslint: ^8.0.1
@@ -12289,6 +12305,7 @@ __metadata:
     eslint-plugin-react: ^7.31.1
     eslint-plugin-react-hooks: ^4.6.0
     husky: ^8.0.1
+    lodash: ^4.17.21
     ts-node: ^10.9.1
     typescript: "*"
   languageName: unknown
@@ -13650,7 +13667,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:*, typescript@npm:^4.6.4, typescript@npm:^4.8.2":
+"typescript@npm:*, typescript@npm:^4.1.5, typescript@npm:^4.6.4, typescript@npm:^4.8.2":
   version: 4.8.2
   resolution: "typescript@npm:4.8.2"
   bin:
@@ -13660,7 +13677,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@*#~builtin<compat/typescript>, typescript@patch:typescript@^4.6.4#~builtin<compat/typescript>, typescript@patch:typescript@^4.8.2#~builtin<compat/typescript>":
+"typescript@patch:typescript@*#~builtin<compat/typescript>, typescript@patch:typescript@^4.1.5#~builtin<compat/typescript>, typescript@patch:typescript@^4.6.4#~builtin<compat/typescript>, typescript@patch:typescript@^4.8.2#~builtin<compat/typescript>":
   version: 4.8.2
   resolution: "typescript@patch:typescript@npm%3A4.8.2#~builtin<compat/typescript>::version=4.8.2&hash=a1c5e5"
   bin:
