@@ -4,12 +4,21 @@
   "repository": "https://github.com/SavelevMatthew/sav-ui",
   "author": "Matthew Savelev <savelevmatthew@gmail.com>",
   "license": "MIT",
-  "packageManager": "yarn@3.2.3",
+  "scripts": {
+    "build:tokens": "node ./bin/transform-tokens.js",
+    "build:styles": "style-dictionary build --config ./sd.config.js",
+    "build:vars": "yarn build:tokens && yarn build:styles"
+  },
   "dependencies": {
     "antd": "^4.22.8"
   },
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.21",
+    "style-dictionary": "^3.7.1",
+    "token-transformer": "^0.0.25"
   }
 }
