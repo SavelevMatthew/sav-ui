@@ -1,0 +1,24 @@
+name: Lint design tokens
+
+on:
+  pull_request:
+    paths:
+      - 'packages/ui/src/tokens/**/*'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+      - name: Install packages
+        run: yarn install --immutable
+
+      - name: Lint tokens refs
+        run: yarn workspace @savelevmatthew/ui build:tokens
+
+      - name: Lint CSS
+        run: yarn stylelint "packages/ui/**/*.css"
