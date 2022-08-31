@@ -3,7 +3,7 @@ name: Lint design tokens
 on:
   pull_request:
     paths:
-      - 'packages/ui/src/tokens/**/*'
+      - 'packages/ui/src/tokens/tokens.json'
 
 jobs:
   deploy:
