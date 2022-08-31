@@ -10,7 +10,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout old branch
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Automatic Rebase
+        uses: cirrus-actions/rebase@1.5
+        env:
+          GITHUB_TOKEN: ${{ secrets.FIGMA_PAT }}
+
+      - name: Checkout rebased branch
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
@@ -31,6 +41,7 @@ jobs:
           title: Update design tokens
           assignees: SavelevMatthew
           reviewers: SavelevMatthew
+
       - name: Check PR output
         if: ${{ steps.cpr.outputs.pull-request-number }}
         run: |
