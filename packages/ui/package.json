@@ -11,9 +11,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "build:tokens": "rm -rf ./tokens/sets && node ./bin/transform-tokens.js",
-    "build:styles": "style-dictionary build --config ./sd.config.js",
-    "build:vars": "yarn build:tokens && yarn build:styles",
+    "build:tokens": "find src/tokens -mindepth 1 -not -name 'tokens.json' -delete && node bin/transform-tokens.js && node bin/build-vars.js",
     "build:src": "webpack",
     "build:types": "tsc --emitDeclarationOnly --declarationMap",
     "build": "yarn build:vars && yarn build:src && yarn build:types",
@@ -54,6 +52,7 @@
     "css-minimizer-webpack-plugin": "^4.0.0",
     "less-loader": "^11.0.0",
     "mini-css-extract-plugin": "^2.6.1",
+    "pluralize": "^8.0.0",
     "postcss-loader": "^7.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
