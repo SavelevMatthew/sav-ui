@@ -29,6 +29,8 @@ jobs:
           branch: main-promotion
           labels: auto-generated, review-required, 😎 Cool
           title: Update design tokens
+          assignees: SavelevMatthew
+          reviewers: SavelevMatthew
       - name: Check PR output
         if: ${{ steps.cpr.outputs.pull-request-number }}
         run: |
