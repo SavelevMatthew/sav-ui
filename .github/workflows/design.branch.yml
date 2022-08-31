@@ -26,7 +26,7 @@ jobs:
         id: cpr
         with:
           token: ${{ secrets.FIGMA_PAT }}
-          branch: design
+          branch: main-promotion
           labels: auto-generated, review-required
           title: Update design tokens
       - name: Check PR output
