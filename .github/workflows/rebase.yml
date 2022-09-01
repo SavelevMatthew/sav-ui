@@ -18,7 +18,7 @@ jobs:
       - name: Rebase
         run: |
           git rebase origin/main
-          git push origin origin/tokens --force
+          git push origin design:tokens --force
 
       
 
