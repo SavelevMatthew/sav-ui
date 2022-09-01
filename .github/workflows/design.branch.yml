@@ -3,23 +3,13 @@ name: Generate PR from "design" branch
 on:
   push:
     branches:
-      - design
+      - tokens
 
 jobs:
   generatePR:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout old branch
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-
-      - name: Automatic Rebase
-        uses: cirrus-actions/rebase@1.5
-        env:
-          GITHUB_TOKEN: ${{ secrets.FIGMA_PAT }}
-
       - name: Checkout rebased branch
         uses: actions/checkout@v3
         with:
@@ -28,15 +18,15 @@ jobs:
 
       - name: Reset promotion branch
         run: |
-          git fetch origin design:design
-          git reset --hard design
+          git fetch origin tokens:tokens
+          git reset --hard tokens
 
       - name: Create pull request
         uses: peter-evans/create-pull-request@v4
         id: cpr
         with:
           token: ${{ secrets.FIGMA_PAT }}
-          branch: main-promotion
+          branch: tokens
           labels: auto-generated, review-required, 😎 Cool
           title: Update design tokens
           assignees: SavelevMatthew
