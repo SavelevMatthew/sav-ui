@@ -1,4 +1,4 @@
-name: Generate PR from "design" branch
+name: Rebaser
 
 on:
   push:
@@ -18,7 +18,7 @@ jobs:
       - name: Rebase
         run: |
           git rebase origin/main
-          git push origin tokens --force
+          git push origin origin/tokens --force
 
       
 
