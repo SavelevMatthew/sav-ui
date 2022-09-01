@@ -13,6 +13,7 @@ jobs:
       - name: Checkout old branch
         uses: actions/checkout@v3
         with:
+          token: ${{ secrets.FIGMA_PAT }}
           fetch-depth: 0
 
       - name: Rebase
