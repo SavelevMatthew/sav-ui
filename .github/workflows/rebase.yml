@@ -17,7 +17,7 @@ jobs:
 
       - name: Rebase
         run: |
-          git rebase origin/master
+          git rebase origin/main
           git push origin tokens --force
 
       
