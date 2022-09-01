@@ -1,0 +1,25 @@
+name: Generate PR from "design" branch
+
+on:
+  push:
+    branches:
+      - design
+
+jobs:
+  generatePR:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout old branch
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Rebase
+        run: |
+          git rebase origin/master
+          git push origin tokens --force
+
+      
+
+
