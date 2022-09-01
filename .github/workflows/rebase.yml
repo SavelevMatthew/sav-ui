@@ -18,6 +18,8 @@ jobs:
 
       - name: Rebase
         run: |
+          git config --global user.email "savelevmatthew@gmail.com"
+          git config --global user.name "SavelevMatthew"
           git rebase origin/main
           git push origin design:tokens --force
 
