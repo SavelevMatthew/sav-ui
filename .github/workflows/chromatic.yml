@@ -19,7 +19,7 @@ jobs:
         run: yarn install --immutable
 
       - name: Generate styles
-        run: yarn workspace @savelevmatthew/ui build:vars
+        run: yarn workspace @savelevmatthew/ui build:tokens
 
       - name: Publish chromatic build
         uses: chromaui/action@v1
