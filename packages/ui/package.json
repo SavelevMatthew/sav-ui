@@ -1,5 +1,6 @@
 {
   "name": "@savelevmatthew/ui",
+  "version": "1.0.0-development",
   "description": "Basic UI-kit for testing different integrations",
   "repository": {
     "type": "git",
@@ -14,9 +15,10 @@
     "build:tokens": "find src/tokens -mindepth 1 -not -name 'tokens.json' -delete && node bin/transform-tokens.js && node bin/build-vars.js",
     "build:src": "webpack",
     "build:types": "tsc --emitDeclarationOnly --declarationMap",
-    "build": "yarn build:vars && yarn build:src && yarn build:types",
+    "build": "yarn build:tokens && yarn build:src && yarn build:types",
     "build:sb": "build-storybook",
-    "dev": "yarn build:vars && start-storybook -p 6006"
+    "dev": "yarn build:vars && start-storybook -p 6006",
+    "release": "semantic-release"
   },
   "exports": {
     "./colors": "./dist/colors/index.js"
@@ -48,6 +50,7 @@
     "babel": "^6.23.0",
     "babel-loader": "^8.2.5",
     "chromatic": "^6.8.0",
+    "conventional-changelog-conventionalcommits": "^5.0.0",
     "css-loader": "^6.7.1",
     "css-minimizer-webpack-plugin": "^4.0.0",
     "less-loader": "^11.0.0",
@@ -56,6 +59,8 @@
     "postcss-loader": "^7.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "semantic-release": "^19.0.5",
+    "semantic-release-monorepo": "^7.0.5",
     "source-map-loader": "^4.0.0",
     "style-dictionary": "^3.7.1",
     "token-transformer": "^0.0.25",
@@ -64,7 +69,6 @@
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0"
   },
-  "version": "",
   "bugs": {
     "url": "https://github.com/SavelevMatthew/sav-ui/issues"
   },

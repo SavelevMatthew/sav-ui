@@ -1,6 +1,6 @@
 {
   "name": "root",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Root of monorepo",
   "repository": "https://github.com/SavelevMatthew/sav-ui",
   "author": "Matthew Savelev <savelevmatthew@gmail.com>",
