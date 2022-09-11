@@ -46,7 +46,9 @@ const conventionalAnalyzerConfig = {
 
 module.exports = {
     extends: ['semantic-release-monorepo'],
-    branches: ['main'],
+    branches: [
+        'main',
+    ],
     plugins: [
         ['@semantic-release/commit-analyzer', conventionalAnalyzerConfig],
         ['@semantic-release/release-notes-generator', conventionalChangelogConfig],
