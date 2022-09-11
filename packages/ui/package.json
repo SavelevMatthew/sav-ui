@@ -1,7 +1,7 @@
 {
   "name": "@savelevmatthew/ui",
   "version": "1.0.0-development",
-  "description": "Basic UI-kit for testing different integrations",
+  "description": "Basic UI-kit for testing different integrations and more",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SavelevMatthew/sav-ui.git"
