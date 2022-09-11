@@ -23,6 +23,9 @@
   "exports": {
     "./colors": "./dist/colors/index.js"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "antd": "^4.22.8",
     "lodash": "^4.17.21"
