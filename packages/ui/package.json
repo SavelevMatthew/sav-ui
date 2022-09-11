@@ -21,7 +21,7 @@
     "build": "yarn build:tokens && yarn build:src && yarn build:types",
     "build:sb": "build-storybook",
     "dev": "yarn build:vars && start-storybook -p 6006",
-    "prepare": "yarn build"
+    "prepare": "yarn workspace @savelevmatthew/ui build"
   },
   "exports": {
     "./colors": "./dist/colors/index.js"
