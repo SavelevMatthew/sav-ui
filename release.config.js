@@ -59,8 +59,7 @@ module.exports = {
         [
             '@semantic-release/exec',
             {
-                prepareCmd: 'yarn prepack',
-                publishCmd: 'yarn publish:release',
+                publishCmd: 'yarn install --mode update-lockfile && yarn build && yarn npm publish',
             },
         ],
     ],
