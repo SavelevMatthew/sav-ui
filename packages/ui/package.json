@@ -21,7 +21,8 @@
     "build": "yarn build:tokens && yarn build:src && yarn build:types",
     "build:sb": "build-storybook",
     "dev": "yarn build:vars && start-storybook -p 6006",
-    "prepare": "node bin/transform-tokens.js && node bin/build-vars.js && webpack && tsc --emitDeclarationOnly --declarationMap"
+    "publish:release": "yarn npm publish",
+    "prepack": "yarn build"
   },
   "exports": {
     "./colors": "./dist/colors/index.js"
@@ -43,6 +44,7 @@
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.18.6",
     "@mdx-js/react": "^1.6.22",
+    "@semantic-release/exec": "^6.0.3",
     "@semantic-release/npm": "^9.0.1",
     "@storybook/addon-actions": "^6.5.10",
     "@storybook/addon-docs": "^6.5.10",

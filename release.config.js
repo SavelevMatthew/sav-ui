@@ -50,6 +50,13 @@ module.exports = {
     plugins: [
         ['@semantic-release/commit-analyzer', conventionalAnalyzerConfig],
         ['@semantic-release/release-notes-generator', conventionalChangelogConfig],
-        '@semantic-release/npm',
+        [
+            '@semantic-release/npm',
+            { npmPublish: false },
+        ],
+        [
+            '@semantic-release/exec',
+            { publishCmd: 'yarn publish:release' },
+        ],
     ],
 }
