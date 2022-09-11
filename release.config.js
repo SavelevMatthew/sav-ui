@@ -52,15 +52,6 @@ module.exports = {
     plugins: [
         ['@semantic-release/commit-analyzer', conventionalAnalyzerConfig],
         ['@semantic-release/release-notes-generator', conventionalChangelogConfig],
-        [
-            '@semantic-release/npm',
-            { npmPublish: false },
-        ],
-        [
-            '@semantic-release/exec',
-            {
-                publishCmd: 'yarn install --mode update-lockfile && yarn build && yarn npm publish',
-            },
-        ],
+        '@semantic-release/npm',
     ],
 }

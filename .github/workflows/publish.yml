@@ -22,7 +22,7 @@ jobs:
         run: yarn workspace @savelevmatthew/ui build
 
       - name: Publish package
-        run: yarn workspace @savelevmatthew/ui semantic-release
+        run: yarn multi-semantic-release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
