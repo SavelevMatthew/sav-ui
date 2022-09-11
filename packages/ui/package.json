@@ -10,6 +10,9 @@
     "name": "Matthew Savelev",
     "email": "savelevmatthew@gmail.com"
   },
+  "files": [
+    "dist/**/*"
+  ],
   "license": "MIT",
   "scripts": {
     "build:tokens": "find src/tokens -mindepth 1 -not -name 'tokens.json' -delete && node bin/transform-tokens.js && node bin/build-vars.js",
@@ -18,7 +21,7 @@
     "build": "yarn build:tokens && yarn build:src && yarn build:types",
     "build:sb": "build-storybook",
     "dev": "yarn build:vars && start-storybook -p 6006",
-    "release": "semantic-release"
+    "prepare": "yarn build"
   },
   "exports": {
     "./colors": "./dist/colors/index.js"
