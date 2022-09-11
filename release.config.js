@@ -56,7 +56,10 @@ module.exports = {
         ],
         [
             '@semantic-release/exec',
-            { publishCmd: 'yarn publish:release' },
+            {
+                prepareCmd: 'yarn prepack',
+                publishCmd: 'yarn publish:release',
+            },
         ],
     ],
 }
