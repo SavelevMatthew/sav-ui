@@ -22,7 +22,7 @@
     "build:sb": "build-storybook",
     "dev": "yarn build:vars && start-storybook -p 6006",
     "publish:release": "yarn npm publish",
-    "prepack": "yarn build"
+    "prepack": "yarn && yarn build"
   },
   "exports": {
     "./colors": "./dist/colors/index.js"
