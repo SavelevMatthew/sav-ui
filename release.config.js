@@ -46,6 +46,7 @@ const conventionalAnalyzerConfig = {
 
 module.exports = {
     // extends: ['semantic-release-monorepo'],
+    tagFormat: '${name}-v${version}',
     branches: [
         'main',
     ],
