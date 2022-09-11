@@ -1,5 +1,5 @@
 {
   "ignorePackages": [
-    "!packages/ui/**"
+    "apps/**"
   ]
 }
