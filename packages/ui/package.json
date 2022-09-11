@@ -21,7 +21,7 @@
     "build": "yarn build:tokens && yarn build:src && yarn build:types",
     "build:sb": "build-storybook",
     "dev": "yarn build:vars && start-storybook -p 6006",
-    "prepack": "yarn build"
+    "prepack": "yarn install --mode update-lockfile && yarn build"
   },
   "exports": {
     "./colors": "./dist/colors/index.js"
