@@ -21,7 +21,7 @@
     "build": "yarn build:tokens && yarn build:src && yarn build:types",
     "build:sb": "build-storybook",
     "dev": "yarn build:vars && start-storybook -p 6006",
-    "prepack": "yarn --immutable && yarn build"
+    "prepare": "node bin/transform-tokens.js && node bin/build-vars.js && webpack && tsc --emitDeclarationOnly --declarationMap"
   },
   "exports": {
     "./colors": "./dist/colors/index.js"
