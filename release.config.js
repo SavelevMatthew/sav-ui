@@ -7,7 +7,6 @@ const PERF_SECTION_NAME = '🚌💨 Performance Improvements'
 const PERF_SECTION_TYPES = ['perf']
 const OTHER_SECTION_NAME = '💅 Other Changes'
 const OTHER_SECTION_TYPES = ['docs', 'style', 'refactor', 'test', 'build', 'ci', 'chore', 'revert']
-const NOTES_ORDER = ['BREAKING', 'FEATURE', 'BUG', 'PERFORMANCE', 'OTHER']
 
 // Release type config
 const MINOR_RELEASE_TYPES = ['feat']
@@ -19,17 +18,6 @@ const generateSectionRules = (sectionName, commitTypes) => {
 }
 const generateReleaseRules = (release, commitTypes) => {
     return commitTypes.map(commitType => ({ type: commitType, release }))
-}
-
-const getOrder = (groupTitle) => {
-    const upperTitle = groupTitle.toUpperCase()
-    for (let i = 0; i < NOTES_ORDER.length; i++) {
-        if (upperTitle.includes(NOTES_ORDER[i])) {
-            return i
-        }
-    }
-
-    return NOTES_ORDER.length
 }
 
 const basicConventionalConfig = {
@@ -46,14 +34,6 @@ const basicConventionalConfig = {
 
 const conventionalChangelogConfig = {
     ...basicConventionalConfig,
-    writerOpts: {
-        commitGroupsSort: (a, b) => {
-            const aOrder = getOrder(a.title)
-            const bOrder = getOrder(b.title)
-
-            return aOrder - bOrder
-        },
-    },
 }
 
 const conventionalAnalyzerConfig = {
