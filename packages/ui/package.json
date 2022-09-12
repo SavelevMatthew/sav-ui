@@ -19,7 +19,12 @@
     "dev": "yarn build:tokens && start-storybook -p 6006",
     "prepare": "yarn install --mode update-lockfile && yarn build"
   },
-  "keywords": ["condo", "UI", "React", "keyword"],
+  "keywords": [
+    "condo",
+    "UI",
+    "React",
+    "keyword"
+  ],
   "files": [
     "dist/**/*"
   ],
