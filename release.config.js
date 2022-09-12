@@ -44,6 +44,7 @@ const basicConventionalConfig = {
     },
 }
 
+
 const conventionalChangelogConfig = {
     ...basicConventionalConfig,
     writerOpts: {
