@@ -1,5 +1,5 @@
 {
-  "name": "@savelevmatthew/ui",
+  "name": "@savelevmatthew/sav-ui",
   "description": "Basic UI-kit for testing different integrations",
   "repository": {
     "type": "git",
@@ -77,7 +77,7 @@
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0"
   },
-  "version": "",
+  "version": "*",
   "bugs": {
     "url": "https://github.com/SavelevMatthew/sav-ui/issues"
   },

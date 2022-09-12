@@ -3281,15 +3281,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@savelevmatthew/ui@link:./packages/ui/src::locator=root%40workspace%3A.":
+"@savelevmatthew/sav-ui@workspace:packages/ui":
   version: 0.0.0-use.local
-  resolution: "@savelevmatthew/ui@link:./packages/ui/src::locator=root%40workspace%3A."
-  languageName: node
-  linkType: soft
-
-"@savelevmatthew/ui@workspace:packages/ui":
-  version: 0.0.0-use.local
-  resolution: "@savelevmatthew/ui@workspace:packages/ui"
+  resolution: "@savelevmatthew/sav-ui@workspace:packages/ui"
   dependencies:
     "@babel/core": ^7.18.13
     "@babel/preset-env": ^7.18.10
@@ -3330,6 +3324,12 @@ __metadata:
     react: ">=16"
     react-dom: ">=16"
   languageName: unknown
+  linkType: soft
+
+"@savelevmatthew/ui@link:./packages/ui/src::locator=root%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "@savelevmatthew/ui@link:./packages/ui/src::locator=root%40workspace%3A."
+  languageName: node
   linkType: soft
 
 "@semantic-release/commit-analyzer@npm:^9.0.2":
