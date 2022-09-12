@@ -16,7 +16,14 @@
     "build:types": "tsc --emitDeclarationOnly --declarationMap",
     "build": "yarn build:vars && yarn build:src && yarn build:types",
     "build:sb": "build-storybook",
-    "dev": "yarn build:vars && start-storybook -p 6006"
+    "dev": "yarn build:vars && start-storybook -p 6006",
+    "prepare": "yarn install --mode update-lockfile && yarn build"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "publishConfig": {
+    "access": "public"
   },
   "exports": {
     "./colors": "./dist/colors/index.js"
