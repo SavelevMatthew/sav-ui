@@ -30,8 +30,8 @@ jobs:
       - name: Install deps
         run: yarn --immutable
 
-      - name: Publish UI package
-        run: yarn workspace @savelevmatthew/ui semantic-release
+      - name: Publish packages
+        run: yarn multi-semantic-release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
