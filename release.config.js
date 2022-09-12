@@ -39,6 +39,9 @@ const conventionalAnalyzerConfig = {
         ...generateReleaseRules('minor', MINOR_RELEASE_TYPES),
         ...generateReleaseRules('patch', PATCH_RELEASE_TYPES),
     ],
+    parserOpts: {
+        noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES', 'BREAKING-CHANGE', 'BREAKING-CHANGES'],
+    },
 }
 
 module.exports = {
