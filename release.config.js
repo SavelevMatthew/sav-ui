@@ -1,11 +1,11 @@
 // Release notes config
-const FEAT_SECTION_NAME = 'New Features'
+const FEAT_SECTION_NAME = '✨ New Features'
 const FEAT_SECTION_TYPES = ['feat']
-const FIX_SECTION_NAME = 'Bug Fixes'
+const FIX_SECTION_NAME = '🐛 Bug Fixes'
 const FIX_SECTION_TYPES = ['fix', 'hotfix']
-const PERF_SECTION_NAME = 'Performance Improvements'
+const PERF_SECTION_NAME = '🚀 Performance Improvements'
 const PERF_SECTION_TYPES = ['perf']
-const OTHER_SECTION_NAME = 'Other Changes'
+const OTHER_SECTION_NAME = '🦖 Other Changes'
 const OTHER_SECTION_TYPES = ['docs', 'style', 'refactor', 'test', 'build', 'ci', 'chore', 'revert']
 
 // Release type config
