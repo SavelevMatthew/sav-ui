@@ -38,6 +38,7 @@ const conventionalAnalyzerConfig = {
     releaseRules: [
         ...generateReleaseRules('minor', MINOR_RELEASE_TYPES),
         ...generateReleaseRules('patch', PATCH_RELEASE_TYPES),
+        { breaking: true, release: 'major' },
     ],
     parserOpts: {
         noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES', 'BREAKING-CHANGE', 'BREAKING-CHANGES'],
