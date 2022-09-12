@@ -20,7 +20,6 @@ jobs:
         run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
 
       - name: Get cache if possible
-        id: yarn-cache-load
         uses: actions/cache@v3
         with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
@@ -28,8 +27,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - name: Install deps if necessary
-        if: steps.yarn-cache-load.outputs.cache-hit != 'true'
+      - name: Install deps
         run: yarn --immutable
 
       - name: Publish packages
