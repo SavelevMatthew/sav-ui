@@ -22,8 +22,7 @@
     "target": "es6",
   },
   "include": [
-    "src",
-    "stories"
+    "src"
   ],
   "exclude": [
     "node_modules"
