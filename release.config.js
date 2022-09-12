@@ -5,7 +5,7 @@ const FIX_SECTION_NAME = '🐛 Bug Fixes'
 const FIX_SECTION_TYPES = ['fix', 'hotfix']
 const PERF_SECTION_NAME = '🚌💨 Performance Improvements'
 const PERF_SECTION_TYPES = ['perf']
-const OTHER_SECTION_NAME = 'Other Changes'
+const OTHER_SECTION_NAME = '💅 Other Changes'
 const OTHER_SECTION_TYPES = ['docs', 'style', 'refactor', 'test', 'build', 'ci', 'chore', 'revert']
 const NOTES_ORDER = ['BREAKING', 'FEATURE', 'BUG', 'PERFORMANCE', 'OTHER']
 
