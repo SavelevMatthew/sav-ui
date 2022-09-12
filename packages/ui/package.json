@@ -14,9 +14,9 @@
     "build:tokens": "find src/tokens -mindepth 1 -not -name 'tokens.json' -delete && node bin/transform-tokens.js && node bin/build-vars.js",
     "build:src": "webpack",
     "build:types": "tsc --emitDeclarationOnly --declarationMap",
-    "build": "yarn build:vars && yarn build:src && yarn build:types",
+    "build": "yarn build:tokens && yarn build:src && yarn build:types",
     "build:sb": "build-storybook",
-    "dev": "yarn build:vars && start-storybook -p 6006",
+    "dev": "yarn build:tokens && start-storybook -p 6006",
     "prepare": "yarn install --mode update-lockfile && yarn build"
   },
   "files": [
