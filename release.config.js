@@ -36,6 +36,7 @@ const conventionalChangelogConfig = {
     ...basicConventionalConfig,
 }
 
+
 const conventionalAnalyzerConfig = {
     ...basicConventionalConfig,
     releaseRules: [
