@@ -34,6 +34,6 @@ jobs:
 
       - name: Publish packages
         run: yarn multi-semantic-release
-        with:
+        env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
