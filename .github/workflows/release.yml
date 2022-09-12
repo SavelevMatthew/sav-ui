@@ -1,0 +1,39 @@
+name: NPM publish
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  packages:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Get yarn berry cache dir
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
+
+      - name: Get cache if possible
+        id: yarn-cache-load
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: Install deps if necessary
+        if: steps.yarn-cache-load.outputs.cache-hit != 'true'
+        run: yarn --immutable
+
+      - name: Publish packages
+        run: yarn multi-semantic-release
+        with:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
