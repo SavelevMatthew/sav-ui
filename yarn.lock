@@ -1938,9 +1938,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cra/src@link:./src::locator=%40savelevmatthew%2Fcra%40workspace%3Aapps%2Fcra":
+"@cra/src@link:./apps/cra/src::locator=root%40workspace%3A.":
   version: 0.0.0-use.local
-  resolution: "@cra/src@link:./src::locator=%40savelevmatthew%2Fcra%40workspace%3Aapps%2Fcra"
+  resolution: "@cra/src@link:./apps/cra/src::locator=root%40workspace%3A."
   languageName: node
   linkType: soft
 
@@ -3272,7 +3272,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@savelevmatthew/cra@workspace:apps/cra"
   dependencies:
-    "@cra/src": "link:./src"
     "@savelevmatthew/ui": "workspace:^"
     "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^13.3.0
@@ -20377,6 +20376,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^17.1.1
     "@commitlint/config-conventional": ^17.1.0
+    "@cra/src": "link:./apps/cra/src"
     "@qiwi/multi-semantic-release": ^6.5.1
     "@savelevmatthew/ui": "link:./packages/ui/src"
     "@semantic-release/exec": ^6.0.3
