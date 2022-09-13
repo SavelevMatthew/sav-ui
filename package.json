@@ -22,7 +22,6 @@
   "devDependencies": {
     "@commitlint/cli": "^17.1.1",
     "@commitlint/config-conventional": "^17.1.0",
-    "@cra/src": "link:./apps/cra/src",
     "@qiwi/multi-semantic-release": "^6.5.1",
     "@savelevmatthew/ui": "link:./packages/ui/src",
     "@semantic-release/exec": "^6.0.3",
