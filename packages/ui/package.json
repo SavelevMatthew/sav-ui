@@ -17,7 +17,7 @@
     "build": "yarn build:tokens && yarn build:src && yarn build:types",
     "build:sb": "build-storybook",
     "dev": "yarn build:tokens && start-storybook -p 6006",
-    "prepare": "yarn install --mode update-lockfile && yarn build"
+    "prepack": "yarn install --mode update-lockfile && yarn build"
   },
   "keywords": [
     "condo",
