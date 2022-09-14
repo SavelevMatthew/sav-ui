@@ -55,8 +55,7 @@ module.exports = {
     plugins: [
         ['@semantic-release/commit-analyzer', conventionalAnalyzerConfig],
         ['@semantic-release/release-notes-generator', conventionalChangelogConfig],
-        ['@semantic-release/npm'],
-        // ['@condo/yarn'],
-        // '@semantic-release/github',
+        '@semantic-release/npm',
+        '@semantic-release/github',
     ],
 }

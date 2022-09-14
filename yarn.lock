@@ -3149,7 +3149,6 @@ __metadata:
     babel: ^6.23.0
     babel-loader: ^8.2.5
     chromatic: ^6.8.0
-    conventional-changelog-conventionalcommits: ^5.0.0
     css-loader: ^6.7.1
     css-minimizer-webpack-plugin: ^4.0.0
     less-loader: ^11.0.0
@@ -3159,8 +3158,6 @@ __metadata:
     postcss-loader: ^7.0.1
     react: ^16.13.1
     react-dom: ^16.13.1
-    semantic-release: ^19.0.5
-    semantic-release-monorepo: ^7.0.5
     source-map-loader: ^4.0.0
     style-dictionary: ^3.7.1
     token-transformer: ^0.0.25
@@ -3195,22 +3192,6 @@ __metadata:
   version: 3.0.0
   resolution: "@semantic-release/error@npm:3.0.0"
   checksum: 29c4391ecbefd9ea991f8fdf5ab3ceb9c4830281da56d9dbacd945c476cb86f10c3b55cd4a6597098c0ea3a59f1ec4752132abeea633e15972f49f4704e61d35
-  languageName: node
-  linkType: hard
-
-"@semantic-release/exec@npm:^6.0.3":
-  version: 6.0.3
-  resolution: "@semantic-release/exec@npm:6.0.3"
-  dependencies:
-    "@semantic-release/error": ^3.0.0
-    aggregate-error: ^3.0.0
-    debug: ^4.0.0
-    execa: ^5.0.0
-    lodash: ^4.17.4
-    parse-json: ^5.0.0
-  peerDependencies:
-    semantic-release: ">=18.0.0"
-  checksum: c6ad2f02ff01a4709c4914f560d0343efea9afe993c733ff971da8bf89604a1460d87b26a1a2ace5992c5ace8e8d384cf314504e0c4b623fc8433e8e8d9e2fe0
   languageName: node
   linkType: hard
 
@@ -11126,21 +11107,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"execa@npm:^0.8.0":
-  version: 0.8.0
-  resolution: "execa@npm:0.8.0"
-  dependencies:
-    cross-spawn: ^5.0.1
-    get-stream: ^3.0.0
-    is-stream: ^1.1.0
-    npm-run-path: ^2.0.0
-    p-finally: ^1.0.0
-    signal-exit: ^3.0.0
-    strip-eof: ^1.0.0
-  checksum: c2a4bf6e051737e46bee61a93ec286cb71a05f16650a1918c8d6262ba9f0bac031472252411baa8c78b7f432f10cb4c601349403774d69be2ebd864e9b1eca60
-  languageName: node
-  linkType: hard
-
 "execa@npm:^1.0.0":
   version: 1.0.0
   resolution: "execa@npm:1.0.0"
@@ -11589,7 +11555,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"find-up@npm:^2.0.0, find-up@npm:^2.1.0":
+"find-up@npm:^2.0.0":
   version: 2.1.0
   resolution: "find-up@npm:2.1.0"
   dependencies:
@@ -17782,7 +17748,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"p-limit@npm:^1.1.0, p-limit@npm:^1.2.0":
+"p-limit@npm:^1.1.0":
   version: 1.3.0
   resolution: "p-limit@npm:1.3.0"
   dependencies:
@@ -18344,15 +18310,6 @@ __metadata:
   dependencies:
     find-up: ^5.0.0
   checksum: b167bb8dac7bbf22b1d5e30ec223e6b064b84b63010c9d49384619a36734caf95ed23ad23d4f9bd975e8e8082b60a83395f43a89bb192df53a7c25a38ecb57d9
-  languageName: node
-  linkType: hard
-
-"pkg-up@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "pkg-up@npm:2.0.0"
-  dependencies:
-    find-up: ^2.1.0
-  checksum: de4b418175281a082e366ce1a919f032520ee53cf421578b35173f03816f6ec4c19e1552066840bb0988c3e1215859653948efd6ca3507a23f4f44229269500d
   languageName: node
   linkType: hard
 
@@ -19779,13 +19736,6 @@ __metadata:
   dependencies:
     performance-now: ^2.1.0
   checksum: 50ba284e481c8185dbcf45fc4618ba3aec580bb50c9121385d5698cb6012fe516d2015b1df6dd407a7b7c58d44be8086108236affbce1861edd6b44637c8cd52
-  languageName: node
-  linkType: hard
-
-"ramda@npm:^0.25.0":
-  version: 0.25.0
-  resolution: "ramda@npm:0.25.0"
-  checksum: 008abbcc69aefd89a2a4a0c9f4cf9f8da2ec490a0e1e261b4c88de8540ef0c383d469bfdf71b758b559377c71bfa8efea164fdb1779169359a86b46f7cb23cb1
   languageName: node
   linkType: hard
 
@@ -21523,7 +21473,6 @@ __metadata:
     "@commitlint/config-conventional": ^17.1.0
     "@qiwi/multi-semantic-release": ^6.5.1
     "@savelevmatthew/ui": "link:./packages/ui/src"
-    "@semantic-release/exec": ^6.0.3
     "@types/lodash": ^4.14.184
     "@typescript-eslint/eslint-plugin": ^5.0.0
     "@typescript-eslint/parser": ^5.35.1
@@ -21771,33 +21720,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semantic-release-monorepo@npm:^7.0.5":
-  version: 7.0.5
-  resolution: "semantic-release-monorepo@npm:7.0.5"
-  dependencies:
-    debug: ^3.1.0
-    execa: ^0.8.0
-    p-limit: ^1.2.0
-    pkg-up: ^2.0.0
-    ramda: ^0.25.0
-    read-pkg: ^5.0.0
-    semantic-release-plugin-decorators: ^3.0.0
-  peerDependencies:
-    semantic-release: ">=15.11.x"
-  checksum: 318d996e09ba148dcce8311f89c368c46d6a03fb49826af98eb92dc81c1abae80087316c9a8af66af73135a25c804dca94dd134e22f8446281b06dd26c61d966
-  languageName: node
-  linkType: hard
-
-"semantic-release-plugin-decorators@npm:^3.0.0":
-  version: 3.0.1
-  resolution: "semantic-release-plugin-decorators@npm:3.0.1"
-  peerDependencies:
-    semantic-release: ">=11"
-  checksum: ddb94f90d123f04bc635de44904a7414cd2f9d2b013f71f7063b20de21c7b0dd9214269616cd13f252fd3568a57e922d103cc5e4bf3c4400374ae23387d3a2e0
-  languageName: node
-  linkType: hard
-
-"semantic-release@npm:^19.0.2, semantic-release@npm:^19.0.5":
+"semantic-release@npm:^19.0.2":
   version: 19.0.5
   resolution: "semantic-release@npm:19.0.5"
   dependencies:
