@@ -1938,6 +1938,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@cra/src@link:./src::locator=%40savelevmatthew%2Fcra%40workspace%3Aapps%2Fcra":
+  version: 0.0.0-use.local
+  resolution: "@cra/src@link:./src::locator=%40savelevmatthew%2Fcra%40workspace%3Aapps%2Fcra"
+  languageName: node
+  linkType: soft
+
 "@cspotcode/source-map-support@npm:^0.8.0":
   version: 0.8.1
   resolution: "@cspotcode/source-map-support@npm:0.8.1"
@@ -3266,6 +3272,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@savelevmatthew/cra@workspace:apps/cra"
   dependencies:
+    "@cra/src": "link:./src"
+    "@savelevmatthew/ui": "workspace:^"
     "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^13.3.0
     "@testing-library/user-event": ^13.5.0
@@ -3287,7 +3295,7 @@ __metadata:
   languageName: node
   linkType: soft
 
-"@savelevmatthew/ui@workspace:packages/ui":
+"@savelevmatthew/ui@workspace:^, @savelevmatthew/ui@workspace:packages/ui":
   version: 0.0.0-use.local
   resolution: "@savelevmatthew/ui@workspace:packages/ui"
   dependencies:
