@@ -3266,7 +3266,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@savelevmatthew/cra@workspace:apps/cra"
   dependencies:
-    "@savelevmatthew/ui": "workspace:^"
     "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^13.3.0
     "@testing-library/user-event": ^13.5.0
@@ -3288,7 +3287,7 @@ __metadata:
   languageName: node
   linkType: soft
 
-"@savelevmatthew/ui@workspace:^, @savelevmatthew/ui@workspace:packages/ui":
+"@savelevmatthew/ui@workspace:packages/ui":
   version: 0.0.0-use.local
   resolution: "@savelevmatthew/ui@workspace:packages/ui"
   dependencies:
@@ -3311,6 +3310,7 @@ __metadata:
     babel: ^6.23.0
     babel-loader: ^8.2.5
     chromatic: ^6.8.0
+    conventional-changelog-conventionalcommits: ^5.0.0
     css-loader: ^6.7.1
     css-minimizer-webpack-plugin: ^4.0.0
     less-loader: ^11.0.0
