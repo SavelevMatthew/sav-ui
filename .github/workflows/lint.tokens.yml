@@ -18,7 +18,7 @@ jobs:
         run: yarn install --immutable
 
       - name: Lint tokens refs
-        run: yarn workspace @savelevmatthew/ui build:tokens
+        run: yarn workspace @savelevmatiaz/ui build:tokens
 
       - name: Lint CSS
         run: yarn stylelint "packages/ui/**/*.css"

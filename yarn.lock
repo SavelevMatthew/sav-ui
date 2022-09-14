@@ -3099,36 +3099,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@savelevmatthew/cra@workspace:apps/cra":
+"@savelevmatiaz/ui@link:./packages/ui/src::locator=root%40workspace%3A.":
   version: 0.0.0-use.local
-  resolution: "@savelevmatthew/cra@workspace:apps/cra"
-  dependencies:
-    "@cra/src": "link:./src"
-    "@savelevmatthew/ui": "workspace:^"
-    "@testing-library/jest-dom": ^5.16.5
-    "@testing-library/react": ^13.3.0
-    "@testing-library/user-event": ^13.5.0
-    "@types/jest": ^27.5.2
-    "@types/node": ^16.11.56
-    "@types/react": ^18.0.17
-    "@types/react-dom": ^18.0.6
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    react-scripts: 5.0.1
-    typescript: ^4.8.2
-    web-vitals: ^2.1.4
-  languageName: unknown
-  linkType: soft
-
-"@savelevmatthew/ui@link:./packages/ui/src::locator=root%40workspace%3A.":
-  version: 0.0.0-use.local
-  resolution: "@savelevmatthew/ui@link:./packages/ui/src::locator=root%40workspace%3A."
+  resolution: "@savelevmatiaz/ui@link:./packages/ui/src::locator=root%40workspace%3A."
   languageName: node
   linkType: soft
 
-"@savelevmatthew/ui@workspace:^, @savelevmatthew/ui@workspace:packages/ui":
+"@savelevmatiaz/ui@workspace:^, @savelevmatiaz/ui@workspace:packages/ui":
   version: 0.0.0-use.local
-  resolution: "@savelevmatthew/ui@workspace:packages/ui"
+  resolution: "@savelevmatiaz/ui@workspace:packages/ui"
   dependencies:
     "@babel/core": ^7.18.13
     "@babel/preset-env": ^7.18.10
@@ -3168,6 +3147,27 @@ __metadata:
   peerDependencies:
     react: ">=16"
     react-dom: ">=16"
+  languageName: unknown
+  linkType: soft
+
+"@savelevmatthew/cra@workspace:apps/cra":
+  version: 0.0.0-use.local
+  resolution: "@savelevmatthew/cra@workspace:apps/cra"
+  dependencies:
+    "@cra/src": "link:./src"
+    "@savelevmatiaz/ui": "workspace:^"
+    "@testing-library/jest-dom": ^5.16.5
+    "@testing-library/react": ^13.3.0
+    "@testing-library/user-event": ^13.5.0
+    "@types/jest": ^27.5.2
+    "@types/node": ^16.11.56
+    "@types/react": ^18.0.17
+    "@types/react-dom": ^18.0.6
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    react-scripts: 5.0.1
+    typescript: ^4.8.2
+    web-vitals: ^2.1.4
   languageName: unknown
   linkType: soft
 
@@ -21472,7 +21472,7 @@ __metadata:
     "@commitlint/cli": ^17.1.1
     "@commitlint/config-conventional": ^17.1.0
     "@qiwi/multi-semantic-release": ^6.5.1
-    "@savelevmatthew/ui": "link:./packages/ui/src"
+    "@savelevmatiaz/ui": "link:./packages/ui/src"
     "@types/lodash": ^4.14.184
     "@typescript-eslint/eslint-plugin": ^5.0.0
     "@typescript-eslint/parser": ^5.35.1

@@ -1,5 +1,5 @@
 {
-  "name": "@savelevmatthew/ui",
+  "name": "@savelevmatiaz/ui",
   "description": "Basic UI-kit for testing different integrations and so on",
   "repository": {
     "type": "git",
@@ -81,7 +81,5 @@
   "bugs": {
     "url": "https://github.com/SavelevMatthew/sav-ui/issues"
   },
-  "readme": "ERROR: No README data found!",
-  "homepage": "https://github.com/SavelevMatthew/sav-ui#readme",
-  "_id": "@savelevmatthew/ui@"
+  "homepage": "https://github.com/SavelevMatthew/sav-ui#readme"
 }

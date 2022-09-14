@@ -26,7 +26,7 @@ function splitTokenSets () {
         // Generate separate resolved token set
         const childProcess = spawn('yarn', [
             'workspace',
-            '@savelevmatthew/ui',
+            '@savelevmatiaz/ui',
             'token-transformer',
             'src/tokens/tokens.json',
             `src/tokens/sets/${setName}.json`,

@@ -14,4 +14,5 @@ const ignorePackages = getDirectories(path.join(__dirname, 'packages'))
 
 module.exports = {
     tagFormat: '${name}-v${version}',
+
 }

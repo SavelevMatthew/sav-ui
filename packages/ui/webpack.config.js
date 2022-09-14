@@ -25,7 +25,7 @@ module.exports = {
         clean: true,
         library: {
             type: 'umd',
-            name: '@condo/ui',
+            name: '@savelevmatiaz/ui',
         },
         globalObject: 'this',
     },
