@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@cra/src": "link:./src",
+    "@open-condo/bridge": "^1.0.0",
+    "@open-condo/ui": "^1.13.2",
     "@savelevmatiaz/ui": "workspace:^",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
